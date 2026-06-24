@@ -104,7 +104,7 @@ export default function StarMapSection() {
             textAlign: 'center',
           }}
         >
-          2025.03.11
+          2026.03.11
         </p>
       </ScrollReveal>
 
