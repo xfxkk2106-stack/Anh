@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@300;400;600&family=Noto+Serif+SC:wght@400;700&display=swap');
+
+:root {
+  --night-blue: #0d1b2a;
+  --night-blue-light: #1b2d45;
+  --warm-gold: #f4c97a;
+  --warm-gold-dim: rgba(244, 201, 122, 0.6);
+  --soft-pink: #f9a8c9;
+  --soft-pink-dim: rgba(249, 168, 201, 0.4);
+  --text-light: rgba(255, 255, 255, 0.9);
+  --text-dim: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: var(--night-blue);
+  color: var(--text-light);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', 'Noto Serif SC', serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--night-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--warm-gold-dim);
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--soft-pink-dim);
+  color: var(--warm-gold);
+}
